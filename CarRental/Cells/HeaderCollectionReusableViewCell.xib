@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HeaderCollectionReusableViewCell" customModule="CarRental" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="191"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rkr-O1-DGF">
+                        <rect key="frame" x="-7" y="0.0" width="110" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Aw0-3c-eue"/>
+                            <constraint firstAttribute="width" constant="110" id="aHu-ft-lcf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esv-rt-AWw">
+                        <rect key="frame" x="0.0" y="100" width="96" height="91"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="esv-rt-AWw" secondAttribute="bottom" id="6bV-V0-u0l"/>
+                <constraint firstItem="esv-rt-AWw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Agb-J4-h09"/>
+                <constraint firstItem="esv-rt-AWw" firstAttribute="top" secondItem="Rkr-O1-DGF" secondAttribute="bottom" id="Zda-JZ-k3f"/>
+                <constraint firstItem="esv-rt-AWw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gds-tq-9ZL"/>
+                <constraint firstItem="Rkr-O1-DGF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lbt-oc-kia"/>
+                <constraint firstAttribute="trailing" secondItem="esv-rt-AWw" secondAttribute="trailing" id="ltb-l3-d4K"/>
+                <constraint firstItem="Rkr-O1-DGF" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="qOg-eM-Kie"/>
+            </constraints>
+            <size key="customSize" width="96" height="191"/>
+            <connections>
+                <outlet property="carSectionImage" destination="Rkr-O1-DGF" id="GAq-i4-BvI"/>
+                <outlet property="infoLabel" destination="esv-rt-AWw" id="zgf-wJ-V7h"/>
+            </connections>
+            <point key="canvasLocation" x="73.282442748091597" y="-39.08450704225352"/>
+        </collectionViewCell>
+    </objects>
+</document>
